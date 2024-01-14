@@ -1,0 +1,19 @@
+<div class="flex flex-col">
+  <div>
+    <a class="sr-only" href="#connect">Connect</a>
+    <h1 class="font-black text-front text-5xl leading-none break-words mb-6">{{ author.name }}</h1>
+    <h2 class="font-medium text-front mb-4 leading-tight">{{ author.title }}</h2>
+    <div class="relative w-full text-center">
+      <div class="rounded-full relative z-10 overflow-hidden inline-block">
+        <img alt="{{ author.name }}" class="rounded-full" width="160" height="160" src="{{ author.image }}"/>
+      </div>
+    </div>
+  </div>
+  <div class="inline-flex items-center highlight mt-6 w-auto">
+    <span class="text-lead border-r-2 border-r-husky-400 dark:border-r-husky-600 px-3">
+      <img src="{{ author.location.icon }}" alt="location icon"/>
+    </span>
+    <span class="font-bold py-1 px-3 text-lg">{{ author.location.name }}</span>
+  </div>
+  {% include "partials/_connect.njk" %}
+</div>

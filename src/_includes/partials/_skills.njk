@@ -1,0 +1,25 @@
+<section class="mt-4">
+  <h3 class="font-header font-semibold text-xl uppercase mb-6 relative flex items-center">
+    <span class="absolute w-1/2 h-full bg-gradient-to-r from-husky-600 via-husky-600 to-transparent"></span>
+    <span class="relative z-10 mx-6">
+      Skills & Competencies
+    </span>
+  </h3>
+  <div class="flex pb-8">
+    <ul class="w-1/2 list-none">
+      {% for item in author.skills %}
+        {% if loop.index is odd %}
+          {% include "partials/_li_item.njk" %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <ul class="w-1/2 pl-4 list-none">
+      {% for item in author.skills %}
+        {% if loop.index is even %}
+          {% include "partials/_li_item.njk" %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>

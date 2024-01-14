@@ -1,0 +1,24 @@
+<section id="work-experience-wrapper" class="section--page mt-4">
+  <h3 class="font-header font-semibold text-xl uppercase mb-6 relative flex items-center">
+    <span class="absolute w-1/2 h-full bg-gradient-to-r from-husky-500 via-husky-500 dark:from-husky-600 to-transparent"></span>
+    <span class="relative z-10 mx-6">
+      Work History
+    </span>
+  </h3>
+
+  {% for workHistoryItem in author.workHistory %}
+    <div class="card-work-history{% if loop.index > 1 %} pt-6{% endif %} pb-4 border-b border-dashed border-line border-b-husky-400 dark:border-b-husky-600">
+        <strong>🚧 {{ workHistoryItem.title }} | {{ workHistoryItem.companyName }} - {{ workHistoryItem.location }}</strong>
+        <p>{{ workHistoryItem.time_start }} - {{ workHistoryItem.time_end }}</p>
+        <p class="pb-5 pt-3"><em>{{ workHistoryItem.company_desc }}</em></p>
+        <ul class="list-disc" style="padding-left: 2rem">
+          {% for item in workHistoryItem.points %}
+            <li class="mb-3">
+              {{ item }}
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+  {% endfor %}
+  <div class="line-break"></div>
+</section>
