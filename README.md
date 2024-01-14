@@ -1,2 +1,3 @@
 # resume-builder
-Build digital resume
+
+#### Todo: Description needs to be added for building a digital resume with 11ty and Tailwind css.
