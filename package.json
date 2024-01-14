@@ -1,0 +1,35 @@
+{
+  "name": "resume-builder",
+  "version": "1.0.0",
+  "description": "This is a template built with 11ty and anyone can use the same to create there own digital resume.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p dev:*",
+    "build": "run-s build:*",
+    "dev:11ty": "eleventy --serve",
+    "build:11ty": "eleventy",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o public/assets/css/styles.css --watch --postcss",
+    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o public/assets/css/styles.css --postcss"
+  },
+  "keywords": [
+    "cv",
+    "css",
+    "template",
+    "11ty",
+    "eleventy",
+    "resume",
+    "tailwindcss",
+    "html",
+    "github"
+  ],
+  "author": "Harmanpreet Singh",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.8",
+    "autoprefixer": "^10.4.16",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  }
+}
