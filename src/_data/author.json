@@ -4,6 +4,7 @@
   "intro": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
   "image": "assets/images/profile_pic_avatar.png",
   "title": "Senior Software Engineer",
+  "project_link": "https://github.com/harman6666/resume-builder",
   "location": {
     "name": "Amsterdam, Netherlands",
     "icon": "assets/svgs/location_icon.svg"
